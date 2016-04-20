@@ -1,0 +1,770 @@
+/** ************************* **/
+/** Froont widget base styles **/
+/** ************************* **/
+.fr-widget h1,
+.fr-widget h2,
+.fr-widget h3,
+.fr-widget h4,
+.fr-widget h5,
+.fr-widget h6,
+.fr-widget p {
+  margin: 0;
+}
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "PT Sans", Tahoma, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+.b-content {
+  font-size: 1.6em;
+  padding-top: 0.02px;
+  min-height: 100%;
+  margin: 0 auto -50px;
+  /* the bottom margin is the negative value of the footer's height */
+  padding-bottom: 50px;
+}
+.b-content.loading {
+  opacity: 0;
+}
+.b-content:after {
+  content: ".";
+  display: none;
+  clear: both;
+  line-height: 0;
+  height: 0;
+}
+.b-content.not-in-preview {
+  padding-bottom: 0;
+}
+a {
+  color: #000;
+  text-decoration: underline;
+}
+.fr-wf {
+  -webkit-transition: opacity .1s linear;
+  -moz-transition: opacity .1s linear;
+  -o-transition: opacity .1s linear;
+  transition: opacity .1s linear;
+  word-break: break-word;
+}
+.wf-loading .fr-wf {
+  opacity: 0 !important;
+}
+.wf-inactive .fr-wf,
+.wf-active .fr-wf {
+  opacity: 1;
+}
+.fr-widget:after,
+.fr-widget:before {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.fr-widget {
+  display: block;
+}
+.text * {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+.fr-link {
+  text-decoration: none;
+}
+.text i {
+  font-style: italic;
+}
+.text u {
+  text-decoration: underline;
+}
+.text del,
+.text s,
+.text strike {
+  text-decoration: line-through;
+}
+.text b,
+.text strong,
+.text h1,
+.text h2,
+.text h3,
+.text h4,
+.text h5,
+.text h6 {
+  font-weight: bold;
+}
+.fr-img {
+  line-height: 0;
+}
+.fr-img img {
+  width: 100%;
+  max-width: 100%;
+}
+.fr-svg svg {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+.fr-svg-inner svg {
+  position: absolute;
+}
+.fr-grid > .fr-widget {
+  float: left;
+}
+.fr-video-inner {
+  position: relative;
+}
+.fr-video-inner iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.fr_hover-animation {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: background, color, border-radius;
+  -moz-transition-property: background, color, border-radius;
+  -o-transition-property: background, color, border-radius;
+  transition-property: background, color, border-radius;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+.fr-video-inner p {
+  display: none;
+}
+.fr-widget-hover-opacity-60:hover {
+  opacity: 0.6;
+}
+.fr-widget-hover-scale-up:hover {
+  transform: scale(1.1);
+}
+.fr-copyright-footer {
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+.fr-copyright-footer.fixed {
+  position: fixed;
+  left: 0;
+}
+.fr-copyright-footer > .fr-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #242424;
+}
+.fr-copyright-footer .fr-made-with-froont {
+  width: auto;
+  font-family: Arial;
+  font-size: .55rem;
+  text-align: center;
+  letter-spacing: .14rem;
+  margin: 0 auto;
+  padding: 1.05rem 0 0.5rem 0;
+  color: #979797;
+}
+.fr-copyright-footer .fr-made-with-froont .text {
+  min-width: 100%;
+}
+.fr-copyright-footer .fr-made-with-froont .text .heart {
+  font-size: .8rem;
+}
+.fr-copyright-footer .fr-bottom-em-spacer {
+  height: 0.8rem;
+  background: #242424;
+}
+.fr-fork-on-froont {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 115px;
+  height: 115px;
+  background-image: url('//froont.com/_static/images/fork-ribbon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10000;
+}
+.fr-fork-on-froont:hover {
+  background-position: 0 -115px;
+}
+
+/** ******************************** **/
+/** End of Froont widget base styles **/
+/** ******************************** **/
+
+/** ************************* **/
+/** Widget styles             **/
+/** ************************* **/
+.b-content {
+  position: relative
+}
+.fr_fijana {
+  float: none;
+  display: block;
+  width: 100%;
+  vertical-align: top;
+  margin-top: 0;
+  margin-right: auto;
+  background-image: url(../images/thumbnail/p7_2.png_738x491.png);
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+  min-height: 37em
+}
+.fr_nogiki {
+  float: none;
+  display: block;
+  width: 100%;
+  vertical-align: top;
+  margin-right: auto;
+  margin-left: auto;
+  background-repeat: no-repeat;
+  background-image: url(../images/thumbnail/triangulo6-copia.png_6314x604.png);
+  background-position: left top;
+  background-size: contain;
+  min-height: 8.75em
+}
+.fr_subehi {
+  float: none;
+  display: block;
+  width: 100%;
+  vertical-align: top;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #181717;
+  min-height: 15.1875em
+}
+.fr_gepowo {
+  margin-top: 61.39em;
+  margin-left: 50.7%
+}
+.fr_memebo {
+  float: none;
+  display: block;
+  width: 100%;
+  font-family: flood-std;
+  font-weight: 500;
+  font-size: 7.7em;
+  line-height: .65em;
+  text-align: center;
+  text-shadow: 5px 6px #000;
+  letter-spacing: -0.1em;
+  vertical-align: top;
+  margin-top: .2435064935064923em;
+  margin-right: auto;
+  margin-bottom: .3em;
+  margin-left: auto;
+  color: #68cabb;
+  min-height: 1.2380952380952381em
+}
+.fr_memebo .text {
+  min-width: 100%
+}
+.fr_cucada {
+  float: none;
+  display: block;
+  width: 100%;
+  font-family: Aldrich;
+  font-weight: 600;
+  font-size: 1.9em;
+  line-height: 1.15em;
+  text-align: center;
+  text-shadow: black .1em .0em .1em;
+  letter-spacing: .01em;
+  vertical-align: top;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  min-height: 2em
+}
+.fr_cucada .text {
+  min-width: 100%
+}
+.fr_gakira {
+  float: none;
+  display: block;
+  width: 100%;
+  vertical-align: top;
+  margin-top: 7.5em;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1px;
+  min-height: 16.5em
+}
+.fr_lunuli {
+  display: block;
+  width: 52.53456221198156%;
+  margin-top: 3.31em;
+  margin-right: auto;
+  margin-left: 23.23%;
+  padding-top: 1px;
+  min-height: 7.287109375em;
+  max-width: 600px
+}
+.fr_biduki {
+  float: none;
+  display: none;
+  width: 2.924827188940092%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  border: 2px;
+  min-height: .3em;
+  -webkit-box-shadow: black .1em .1em .2em;
+  -moz-box-shadow: black .1em .1em .2em;
+  box-shadow: black .1em .1em .2em
+}
+.fr_logage {
+  float: none;
+  display: block;
+  width: 100%;
+  vertical-align: top;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(../images/thumbnail/neon-toprock_2.png_2048x739.png);
+  background-position: center center;
+  background-size: cover;
+  min-height: 20.7236328125em
+}
+.fr_jefepu {
+  margin-top: 40.66em;
+  margin-left: 37.88%
+}
+.fr_kikuho {
+  margin-top: 50.26em;
+  margin-left: 121.16%
+}
+.fr_rutesi {
+  margin-top: 52.41em;
+  margin-left: 4.55%
+}
+.fr_nonife {
+  margin-top: 40.66em;
+  margin-left: 4.55%
+}
+.fr_rofacu {
+  margin-top: 31.03em;
+  margin-left: 117.15%
+}
+.fr_hucene {
+  margin-top: 63.68em;
+  margin-left: 113.81%
+}
+.fr_banota {
+  margin-top: 52.41em;
+  margin-left: 37.88%
+}
+.fr_caharu {
+  margin-top: 40.66em;
+  margin-left: 71.21%
+}
+.fr_gatohu {
+  margin-top: 52.41em;
+  margin-left: 71.21%
+}
+.fr_tihiku {
+  margin-top: 64.15em;
+  margin-left: 4.55%
+}
+.fr_buduke {
+  margin-top: 85.96em;
+  margin-left: 120.77%
+}
+.fr_jenojo {
+  margin-top: 53.73em;
+  margin-left: 124.28%
+}
+.fr_lutelo {
+  margin-top: 64.15em;
+  margin-left: 71.21%
+}
+.fr_miloha {
+  margin-top: 76.36em;
+  margin-left: 113.58%
+}
+.fr_nuniku {
+  margin-top: 39.98em;
+  margin-left: 117.15%
+}
+.fr_bukitu {
+  margin-top: 64.15em;
+  margin-left: 37.88%
+}
+.fr_tivone {
+  margin-top: 81.28em;
+  margin-left: 114.56%
+}
+.fr_nigeci {
+  margin-top: 127.28em;
+  margin-left: 111.03%
+}
+.fr_nohoga {
+  margin-top: 48.92em;
+  margin-left: 113.57%
+}
+.fr_kigiga {
+  float: none;
+  display: block;
+  width: 99.45004582951421%;
+  font-family: Aldrich;
+  font-weight: 600;
+  font-size: 1.75em;
+  line-height: .1em;
+  text-align: center;
+  text-shadow: black .1em .1em .2em;
+  letter-spacing: -0.2em;
+  vertical-align: top;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  min-height: 2em
+}
+.fr_kigiga .text {
+  min-width: 100%
+}
+.fr_kahapo {
+  float: none;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  margin-top: -2.2em;
+  margin-right: auto;
+  margin-left: .14%;
+  background-repeat: no-repeat;
+  background-image: url(../images/thumbnail/triangulo6_1.png_6314x604.png);
+  background-position: right bottom;
+  background-size: contain;
+  min-height: 9.525390625em
+}
+.fr_pudiho {
+  width: 90.04608294930875%;
+  margin-top: .90625em;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1px;
+  min-height: 13.375em;
+  max-width: 1000px
+}
+.fr_pudiho>.fr-widget:nth-child(3n+1) {
+  margin-top: .6em;
+  margin-right: 1%;
+  margin-bottom: .6em;
+  margin-left: 0;
+  width: 32.33%;
+  clear: left;
+  max-width: inherit
+}
+
+#descripcion{
+color: aliceblue;
+}
+.fr_pudiho>.fr-widget:nth-child(3n+2) {
+  margin-top: .6em;
+  margin-right: 1%;
+  margin-bottom: .6em;
+  margin-left: 1%;
+  width: 31.33%;
+  clear: none;
+  max-width: inherit
+}
+.fr_pudiho>.fr-widget:nth-child(3n+3) {
+  margin-top: .6em;
+  margin-right: 0;
+  margin-bottom: .6em;
+  margin-left: 1%;
+  width: 32.33%;
+  clear: none;
+  max-width: inherit
+}
+.fr_vahowe {
+  float: none;
+  display: block;
+  width: 100%;
+  font-family: flood-std;
+  font-weight: 500;
+  font-size: 7.7em;
+  line-height: .65em;
+  text-align: center;
+  text-shadow: 5px 6px #000;
+  letter-spacing: -0.1em;
+  vertical-align: top;
+  margin-top: .2435064935064923em;
+  margin-right: auto;
+  margin-bottom: .3em;
+  margin-left: auto;
+  color: #68cabb;
+  min-height: 1.2380952380952381em
+}
+.fr_vahowe .text {
+  min-width: 100%
+}
+.fr_kacewu {
+  float: none;
+  display: block;
+  width: 100%;
+  font-family: Tahoma;
+  font-weight: 500;
+  font-size: 8.3em;
+  line-height: .8em;
+  text-align: center;
+  letter-spacing: .45em;
+  vertical-align: top;
+  margin-top: -10;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  min-height: .8570253759398496em
+}
+.fr_kacewu .text {
+  min-width: 100%
+}
+@media screen and (max-width: 1024px) {
+  .fr_nogiki {
+    display: block;
+    margin-left: 0;
+    min-height: 6.6806640625em
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_gakira {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-top: 7.5em;
+    margin-right: auto;
+    margin-left: auto
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_logage {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 8.25em
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_kahapo {
+    margin-top: 1.41em;
+    min-height: 7.169921875em
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fr_kacewu {
+    float: none;
+    display: block;
+    width: 100%;
+    font-size: 6.55em;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto
+  }
+  .fr_kacewu .text {
+    min-width: 100%
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_fijana {
+    margin-top: -5.9em
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_nogiki {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 4.75em
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_gakira {
+    margin-top: 7.5em
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_logage {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 6.75em
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_kahapo {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-top: 1.250390625em;
+    margin-right: auto;
+    margin-left: .27%;
+    min-height: 4.6396484375em
+  }
+}
+@media screen and (max-width: 768px) {
+  .fr_kacewu {
+    font-size: 4.9em;
+    margin-top: 0
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_nogiki {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: .55%;
+    min-height: 3.1474609375em
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_memebo {
+    font-size: 5.2em;
+    margin-top: .3605769230769213em
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_cucada {
+    font-size: 1.75em;
+    margin-top: 0
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_gakira {
+    margin-top: 9.625em
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_logage {
+    min-height: 8em
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_kahapo {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-top: -0.4em;
+    margin-right: auto;
+    margin-left: .27%;
+    min-height: 3.3955078125em
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_vahowe {
+    font-size: 5.2em;
+    margin-top: .3605769230769213em
+  }
+}
+@media screen and (max-width: 480px) {
+  .fr_kacewu {
+    font-size: 3.8em;
+    margin-top: 0
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_fijana {
+    min-height: 32.1484375em
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_nogiki {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../images/thumbnail/triangulo6-copia_1.png_6227x598.png);
+    background-position: center top;
+    min-height: 2.5625em
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_memebo {
+    font-size: 3.85em;
+    margin-top: .4870129870129846em
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_logage {
+    background-position: center center;
+    background-size: cover;
+    min-height: 6.9833984375em
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_kahapo {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-top: .162109375em;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 2.1904296875em
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_pudiho {
+    width: 90%
+  }
+  .fr_pudiho>.fr-widget:nth-child(1n+1) {
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 98.0%;
+    clear: left;
+    max-width: inherit
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_vahowe {
+    font-size: 3.85em;
+    margin-top: .4870129870129846em
+  }
+}
+@media screen and (max-width: 320px) {
+  .fr_kacewu {
+    font-size: 2.6em
+  }
+}
+
+/** ******************************** **/
+/** End of widget styles             **/
+/** ******************************** **/
